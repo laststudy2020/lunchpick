@@ -123,6 +123,8 @@ CORS_ALLOWED_ORIGINS = [
     'https://lunchpick-frontend.onrender.com',
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True  # 임시로 모든 도메인 허용
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
