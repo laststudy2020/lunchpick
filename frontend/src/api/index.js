@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:8000/api',
+  baseURL: 'https://lunchpick.onrender.com/api',  // ← 이 부분 변경
 });
 
-export const fetchToday    = ()         => api.get('/today/');
-export const fetchBanners  = ()         => api.get('/banners/');
-export const postDailyMenu = (data)     => api.post('/daily-menus/', data);
+export const fetchToday    = ()     => api.get('/today/');
+export const fetchBanners  = ()     => api.get('/banners/');
+export const postDailyMenu = (data) => api.post('/daily-menus/', data);
 
 export default api;
